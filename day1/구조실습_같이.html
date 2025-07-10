@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조실습_같이</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background: pink;
+            padding: 16px 32px;
+            align-items: center;
+        }
+
+        .header_menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .header_menu > li {
+            margin: 16px;
+        }
+
+        .header_menu > li > a {
+            color: pink;
+            text-decoration: none;
+            padding: 16px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        .news_article {
+            border: 2px solid red;
+            margin: 16px;
+            padding: 8px;
+        }
+
+        main {
+            display: flex;
+        }
+
+        .content_sction {
+            width: 70%;
+        }
+
+        .aside {
+            width: 30%;
+        }
+
+        footer {
+            height: 200px;
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <nav>
+            <ul class="header_menu">
+                <li>
+                    <a href="#">
+                        menu
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        menu
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        menu
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content_section">
+            <article class="news_article">
+                <h2>옆집에 고양이가 침입했다!</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, facilis natus qui ducimus suscipit tenetur dicta quidem expedita illo doloremque exercitationem sint dolorem aliquam! Nisi aperiam ipsa laborum consequatur quis!
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>바다에서 쉬고있는 점박이물범!</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, facilis natus qui ducimus suscipit tenetur dicta quidem expedita illo doloremque exercitationem sint dolorem aliquam! Nisi aperiam ipsa laborum consequatur quis!
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>건강을 지키는 생활습관 10가지</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, facilis natus qui ducimus suscipit tenetur dicta quidem expedita illo doloremque exercitationem sint dolorem aliquam! Nisi aperiam ipsa laborum consequatur quis!
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>아이돌커플탄생!</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, facilis natus qui ducimus suscipit tenetur dicta quidem expedita illo doloremque exercitationem sint dolorem aliquam! Nisi aperiam ipsa laborum consequatur quis!
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>종합영양제 과연 효과있을까?</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, facilis natus qui ducimus suscipit tenetur dicta quidem expedita illo doloremque exercitationem sint dolorem aliquam! Nisi aperiam ipsa laborum consequatur quis!
+                </p>
+            </article>
+            <article class="news_article">
+                <h2>월요일 직장인 피로도 99%라는 연구결과</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, facilis natus qui ducimus suscipit tenetur dicta quidem expedita illo doloremque exercitationem sint dolorem aliquam! Nisi aperiam ipsa laborum consequatur quis!
+                </p>
+            </article>
+        </section>
+
+        <aside class="aside">
+            <h3>Right aside</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore accusantium possimus adipisci beatae accusamus unde pariatur. Ratione veniam blanditiis expedita repellat, doloremque labore voluptatibus. Delectus magni praesentium architecto ex dolorem!
+            </p>
+            <div class="user_form">
+                <input type="text" placeholder="이름 입력">
+                <button type="submit">제출</button>
+            </div>
+            <div class="ppl">
+                <h3>광고</h3>
+                <p>광고내용</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        푸터입니다.
+    </footer>
+</body>
+
+</html>
