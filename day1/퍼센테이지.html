@@ -5,56 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>퍼센테이지</title>
+    <script src="https://kit.fontawesome.com/cfc754b008.js" crossorigin="anonymous"></script>
     <style>
-        .box {
-            border: 1px solid #000;
+        body {
+            background: #9dffff;
+        }
+
+        section {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            border: 1px solid #2600ff;
+            padding: 0px 16px;
             margin: 16px;
-            padding: 8px;
+            height: 80px;
+            position: relative;
         }
 
-        .box::after {
+        div::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0%;
+            height: 80px;
+            top: 0;
+            left: 0;
+            background-color: #2600ff;
+            transition: 0.5s;
+        }
+
+        .box1:hover::before {
+            width: 20%;
+        }
+
+        .box2:hover::before {
+            width: 40%;
+        }
+
+        .box3:hover::before {
+            width: 60%;
+        }
+
+        .box4:hover::before {
+            width: 80%;
+        }
+
+        .box5:hover::before {
             width: 100%;
-            height: ;
         }
 
-        .box:hover::after {
-
+        i {
+            /* opacity: 0.1; */
+            color: rgb(148, 239, 255);
         }
     </style>
 </head>
 
 <body>
-    <section class="box_cover">
-        <div class="box">
-            <h2>내용</h2>
-            <div class="icon">
-                <img src="" alt="">
-            </div>
+    <section>
+        <h1>웹부터 포트폴리오까지~</h1>
+
+        <div class="box1">
+            <h2>
+                20%
+                <i class="fa-brands fa-figma"></i>
+            </h2>
         </div>
-        <div class="box">
-            <h2>내용</h2>
-            <div class="icon">
-                <img src="" alt="">
-            </div>
+        <div class="box2">
+            <h2>
+                40%
+                <i class="fa-brands fa-html5"></i>
+
+            </h2>
         </div>
-        <div class="box">
-            <h2>내용</h2>
-            <div class="icon">
-                <img src="" alt="">
-            </div>
+        <div class="box3">
+            <h2>
+                60%
+                <i class="fa-brands fa-css"></i>
+            </h2>
         </div>
-        <div class="box">
-            <h2>내용</h2>
-            <div class="icon">
-                <img src="" alt="">
-            </div>
+        <div class="box4">
+            <h2>
+                80%
+                <i class="fa-brands fa-js"></i>
+            </h2>
         </div>
-        <div class="box">
-            <h2>내용</h2>
-            <div class="icon">
-                <img src="" alt="">
-            </div>
+        <div class="box5">
+            <h2>
+                100%
+                <i class="fa-solid fa-address-card"></i>
+            </h2>
         </div>
+
     </section>
 </body>
 
