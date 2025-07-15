@@ -1,54 +1,108 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/cfc754b008.js" crossorigin="anonymous"></script>
     <style>
-        h2 {
-            text-align: center;
-            font-size: 50px;
+        * {
+            padding: 0;
             margin: 0;
         }
 
-       .box {
-        display: flex;
-       }
+        .container {
+            display: flex;
+            position: relative;
+            padding: 120px 0;
+        }
 
-       @keyframes img {
-        from {
-                width: 0;
+        h2 {
+            text-align: center;
+            font-size: 150px;
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+        }
+
+        img {
+            width: 1800px;
+            animation-name: img;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        .text_box {
+            margin: 250px 120px;
+            font-size: 30px;
+        }
+
+        p {
+            margin: 30px 0 150px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+            border: 3.5px solid #000;
+            border-radius: 80px;
+            padding: 30px 100px;
+        }
+
+        @keyframes img {
+            0% {
+                transform: translateX(-100%);
             }
-        to {
-                width: 500px;
+
+            100% {
+                transform: translateX(0%);
             }
-       }
+        }
     </style>
 </head>
+
 <body>
     <section>
         <h2>Egg Makes Better</h2>
 
-        <div class="box">
-            <img src="./에그드랍.jpg" alt="">
+        <div class="container">
+            <figure>
+                <img src="./에그드랍.jpg" alt="">
+            </figure>
+
             <div class="text_box">
-                <p>일상의 수준을 높이다</p>
+                <h3>일상의 수준을 높이다</h3>
+
                 <p>
                     현대인에게 필요한 비타민, 철분,
+                    <br>
                     아미노산 등의 풍부한 영양소가 함유된
+                    <br>
                     프리미엄 무항생제 계란만 엄격하게
+                    <br>
                     사용한 맛있는 스크램블 에그로 건강한
+                    <br>
                     한 끼를 요리합니다.
                     <br>
+                    <br>
                     우리에게 익숙한 샌드위치에서 신선한
+                    <br>
                     재료와 감각적인 모양으로 한 단계
+                    <br>
                     업그레이드 된 계란 샌드위치라는
+                    <br>
                     카테고리를 새롭게 창조하였습니다.
                 </p>
 
-                <button class="story">브랜드 스토리</button>
+                <a href="#">
+                    브랜드 스토리
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </section>
 </body>
+
 </html>
