@@ -18,15 +18,26 @@
             padding: 120px 0;
         }
 
-        h2 {
+        .headname {
+            position: absolute;
+            z-index: 1;
+            padding: 50px;
+            left: 24%;
+        }
+
+        .headname > img {
+            width: 150%;
+        }
+
+        /* h2 {
             text-align: center;
             font-size: 150px;
             position: absolute;
             width: 100%;
             z-index: 1;
-        }
+        } */
 
-        img {
+        figure > img {
             width: 1800px;
             animation-name: img;
             animation-duration: 2s;
@@ -65,7 +76,9 @@
 
 <body>
     <section>
-        <h2>Egg Makes Better</h2>
+        <div class="headname">
+            <img src="./에그드랍 글자.png" alt="">
+        </div>
 
         <div class="container">
             <figure>
