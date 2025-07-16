@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/cfc754b008.js" crossorigin="anonymous"></script>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: greenyellow;
+            color: green;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 20px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        li > a {
+            text-decoration: none;
+            color: green;
+            padding: 20px;
+        }
+
+        .icon {
+            margin: 20px;
+        }
+
+        .icon:hover {
+            animation-name: icon;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            
+        }
+
+        @keyframes icon {
+            50% {
+                transform: rotate(-135deg);
+            }
+
+            100% {
+                transform: rotate(-135deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LOGO</h1>
+
+        <ul>
+            <li>
+                <a href="#">메뉴1</a>
+            </li>
+            <li>
+                <a href="#">메뉴2</a>
+            </li>
+            <li>
+                <a href="#">메뉴3</a>
+            </li>
+            <li>
+                <a href="#">메뉴4</a>
+            </li>
+        </ul>
+
+        <div class="icon">
+            <i class="fa-solid fa-plus fa-2xl"></i>
+        </div>
+    </header>
+</body>
+</html>

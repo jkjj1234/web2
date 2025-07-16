@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        margin: 400px;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        width: 100px;
+        height: 100px;
+        background: rgb(116, 116, 255);
+        margin: 50px;
+        border-radius: 50%;
+        animation-name: ellipse;
+        animation-duration: 3s;
+    }
+
+    @keyframes ellipse {
+        from {
+            transform: translateY(0);
+        }
+
+        to {
+            transform: translateY(-300px);
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+
+</html>
