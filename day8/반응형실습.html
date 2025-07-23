@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background: blue;
+            align-items: center;
+        }
+
+        @media(max-width: 1600px) {
+            .box:nth-child(6) {
+               width: 200px;
+               
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>

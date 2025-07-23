@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            height: 200px;
+            width: 200px;
+            background: black;
+            margin: 16px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            /* flex-wrap: wrap; */
+        }
+
+        @media(max-width: 1200px) {
+            ul {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>
