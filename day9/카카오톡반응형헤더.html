@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오톡반응형헤더</title>
+    <script src="https://kit.fontawesome.com/cfc754b008.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .pc_top_content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 8px 24px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 24px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .pc_top_content button {
+            background: none;
+            padding: 8px 14px;
+            border: none;
+            border-radius: 50px;
+        }
+
+        .pc_top_content button a {
+            font-size: 16px;
+        }
+
+        .top_right_wrapper {
+            display: flex;
+            gap: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="pc_header">
+            <div class="pc_top_content">
+                <h1>kakao</h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <button>
+                                <a href="#">소개</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <a href="#">기술과 서비스</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <a href="#">약속과 책임</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <a href="#">소식</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <a href="#">
+                                    투자정보
+                                    <i class="fa-solid fa-arrow-up fa-xs"></i>
+                                </a>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="top_right_wrapper">
+                    <div>
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fa-solid fa-globe fa-xl"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fa-regular fa-moon fa-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pc_bottom_content">
+                <h2>카카오톡</h2>
+
+                <div class="bottom_right_wrapper">
+                    <div>
+                        <a href="#">
+                            카톡 안녕가이드
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            카톡설명서
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            다운로드
+                            <i class="fa-solid fa-circle-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mo_header">
+            <div class="mo_top_content">
+                <h1>kakao</h1>
+                <div class="top_right_wrapper">
+                    <div>
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fa-solid fa-burger fa-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mo_bottom_content">
+                <h2>카카오톡</h2>
+                <div class="bottom_right_wrapper">
+                    <div>
+                        <a href="#">
+                            <i class="fa-solid fa-circle-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
